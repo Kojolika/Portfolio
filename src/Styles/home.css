@@ -1,0 +1,46 @@
+.homeMainArea {
+    position: absolute;
+    min-width: 100%;
+    min-width: 100%;
+    display: flex;
+    /*background-color: #a99985; */
+    justify-content: center;
+    font-size: 50px;
+}
+
+.name {
+    font-size: 50px;
+}
+.selfText
+{
+    margin-left: -100px;
+    
+}
+.name {
+    background-color: #C2DFE3;
+    border-radius: 50px;
+    white-space:nowrap;
+    padding: 50px;
+    padding-right: 70px;
+    margin-bottom: 50px;
+}
+.description
+{
+    background-color: #E0FBFC;
+    border-radius: 50px;
+    font-size: x-large;
+    padding: 50px;
+}
+
+
+
+.selfPictureContainer {
+    height: 800px;
+}
+
+.selfPicture {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+}
