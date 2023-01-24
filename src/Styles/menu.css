@@ -1,0 +1,26 @@
+.container{
+    position: absolute;
+    background-color: wheat;
+    min-width: 100%;
+    top: 0;
+    z-index: 0;
+    opacity: 0;
+    border-style: solid;
+    border-color: white;
+    background-color: black;
+    display: flex;
+
+    animation-name: moveDown;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveDown {
+    100%
+    {
+        opacity: 1;
+        transform: translate(0,36%);
+    }
+}

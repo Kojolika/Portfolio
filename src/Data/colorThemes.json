@@ -1,0 +1,35 @@
+{
+    "themes": [
+        {
+            "name": "default",
+            "colors": [
+                "#5C6B73",
+                "#9DB4C0",
+                "#C2DFE3",
+                "#E0FBFC"
+            ]
+        },
+        {
+            "name": "stormy",
+            "colors": [
+                "#22223b",
+                "#4a4e69",
+                "#9a8c98",
+                "#c9ada7",
+                "#f2e9e4"
+            ]
+        },
+        {
+            "name": "crimson",
+            "colors": [
+                "#8c1c13",
+                "#735751",
+                "#a78a7f",
+                "#bf4342",
+                "#e7d7c1"
+
+                
+            ]
+        }
+    ]
+}

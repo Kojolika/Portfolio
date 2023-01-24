@@ -1,0 +1,12 @@
+.colorContainer > div
+{
+    min-width: 50px;
+    background-color: green;
+}
+
+.colorContainer
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+}
