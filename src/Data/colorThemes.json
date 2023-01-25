@@ -1,7 +1,27 @@
 {
     "themes": [
         {
-            "name": "default",
+            "name": "cloud",
+            "colors": [
+                "#8e9aaf",
+                "#cbc0d3",
+                "#efd3d7",
+                "#feeafa",
+                "#dee2ff"   
+            ]
+        },
+        {
+            "name": "dark",
+            "colors": [
+                "#252422",
+                "#353535", 
+                "#6c757d",
+                "#8d99ae",
+                "#adb5bd"
+            ]
+        },
+        {
+            "name": "lightBlue",
             "colors": [
                 "#5C6B73",
                 "#9DB4C0",
@@ -30,6 +50,36 @@
                 "#735751"
 
                 
+            ]
+        },
+        {
+            "name": "forest",
+            "colors": [
+                "#344e41",
+                "#3a5a40",
+                "#588157",
+                "#a3b18a",
+                "#dad7cd"   
+            ]
+        },
+        {
+            "name": "peach",
+            "colors": [
+                "#f08080",
+                "#f4978e",
+                "#f8ad9d",
+                "#fbc4ab",
+                "#ffdab9"   
+            ]
+        },
+        {
+            "name": "office",
+            "colors": [
+                "#e7e6f7",
+                "#e3d0d8",
+                "#aea3b0",
+                "#827081",
+                "#c6d2ed"   
             ]
         }
     ]

@@ -1,46 +1,60 @@
 .homeMainArea {
-    position: absolute;
-    min-width: 100%;
-    min-width: 100%;
     display: flex;
-    /*background-color: #a99985; */
     justify-content: center;
-    font-size: 50px;
 }
-
-.name {
-    font-size: 50px;
-}
-.selfText
+.imageSpace
 {
-    margin-left: -100px;
-    
+    min-width: 44%;
+}
+.name {
+    font-size: 40px;
 }
 .name {
     background-color: #C2DFE3;
     border-radius: 50px;
-    white-space:nowrap;
-    padding: 50px;
-    padding-right: 70px;
-    margin-bottom: 50px;
+    padding: 10%;
+    margin-bottom: 5%;
 }
 .description
 {
     background-color: #E0FBFC;
     border-radius: 50px;
-    font-size: x-large;
-    padding: 50px;
+    font-size: 24px;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-
-
-.selfPictureContainer {
-    height: 800px;
+#selfImage
+{
+    padding: 2%;
+    min-width: 60%;
+    max-width: 60%;
 }
-
 .selfPicture {
     max-width: 100%;
     min-width: 100%;
+    object-fit: fill;
+}
+.para1
+{
+    display: flex;
+    padding: 3%;
     border-radius: 50px;
-    object-fit: cover;
+    width: 100%;
+}
+.para2
+{
+    display: flex;
+    padding: 3%;
+    border-radius: 50px;
+    width: 100%;
+}
+.para3
+{
+    display: flex;
+    padding: 3%;
+    border-radius: 50px;
+    width: 100%;
 }

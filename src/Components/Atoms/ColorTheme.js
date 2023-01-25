@@ -11,7 +11,7 @@ function ColorTheme(props) {
             {(value) => {
                 return (
                     <li>
-                        <div className='colorContainer' onClick={() => { value.setColorTheme(theme)}}>
+                        <div className='colorContainer' onClick={() => { value.changeColorTheme(theme)}}>
                             <div style={{ backgroundColor: colorTheme.colors[0] }}></div>
                             <div style={{ backgroundColor: colorTheme.colors[1] }}></div>
                             <div style={{ backgroundColor: colorTheme.colors[2] }}></div>

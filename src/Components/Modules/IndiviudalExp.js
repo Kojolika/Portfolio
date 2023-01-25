@@ -8,6 +8,9 @@ function IndiviudalExp(props) {
             {(value) => {
                 return (
                     <div className='expContainer'>
+                        <div className='date' style={{ backgroundColor: value.colorTheme.colors[4] }}>
+                            {props.startDate} - {props.endDate}
+                        </div>
                         <div className='companyName' style={{ backgroundColor: value.colorTheme.colors[2] }}>
                             {props.company}
                             <div className='jobTitle'>
@@ -15,9 +18,6 @@ function IndiviudalExp(props) {
                             </div>
                         </div>
 
-                        <div className='date'>
-                            {props.startDate} - {props.endDate}
-                        </div>
                         <div className='companyDescription' style={{ backgroundColor: value.colorTheme.colors[3] }}>
                             {props.description}
                         </div>

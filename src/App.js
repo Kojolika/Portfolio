@@ -2,14 +2,15 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
+  useLocation
 } from 'react-router-dom';
-import { useState, useContext, useEffect } from 'react';
+import { useState } from 'react';
 
 import "./Styles/app.css";
 import settingsIcon from './Media/settingsIcon.png';
 import settingsIconHover from './Media/settingsIconHover.png';
-import Menu from './Components/Modules/ColorThemeMenu';
+import ColorThemeMenu from './Components/Modules/ColorThemeMenu';
 import { ColorThemeProvider } from './Contexts/ColorThemeContext';
 
 import Home from './Components/Pages/Home';
@@ -20,11 +21,14 @@ import Experience from './Components/Pages/Experience';
 import ColorTheme from './Components/Atoms/ColorTheme';
 
 function App() {
-  //Remove scrolling
-  //document.body.style.overflow = "hidden"
 
   const [isSettingsMenuOn, setSettingsMenu] = useState(false);
   const [settingsIconImage, setSettingsIconImage] = useState(settingsIcon);
+
+  const openSettingsMenu = (oldIcon) => {
+    (oldIcon === settingsIcon) ? setSettingsIconImage(settingsIconHover) : setSettingsIconImage(settingsIcon);
+    setSettingsMenu(!isSettingsMenuOn);
+  };
 
   return (
     <Router>
@@ -38,7 +42,7 @@ function App() {
 
               <span className='seperator'>|</span>
 
-              <div className='tab'>
+              <div className='tab'> 
                 <Link to="/experience" className="tabName">Experience</Link>
               </div>
 
@@ -57,13 +61,11 @@ function App() {
             <div className='settings'>
               <img className='settingsIcon'
                 src={settingsIconImage}
-                onMouseEnter={() => setSettingsIconImage(settingsIconHover)}
-                onMouseLeave={() => setSettingsIconImage(settingsIcon)}
-                onClick={() => setSettingsMenu(!isSettingsMenuOn)} />
+                onClick={() => openSettingsMenu(settingsIconImage)} />
               {isSettingsMenuOn &&
-                <Menu>
+                <ColorThemeMenu>
                   <ColorTheme></ColorTheme>
-                </Menu>}
+                </ColorThemeMenu>}
             </div>
           </div>
           <div className='menuFiller'></div>
