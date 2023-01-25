@@ -6,6 +6,34 @@
             "startDate": "05/21",
             "endDate" : "08/21",
             "description": "• Developed a python program which was able to predict the cost of vehicle parts within the FEDEBOM Ford database with respect to various attributes within the database. • This involved the process of using Factor Analysis to convert categorical data into numerical data, allowing the use of Multiple Linear Regression to predict the cost of the vehicle parts. • This project was developed within an Agile team environment to facilitate collaboration between multiple department managers and team members."
+        },
+        {
+            "company":"Ford Motor Company",
+            "title": "IT Development Intern",
+            "startDate": "05/20",
+            "endDate" : "08/20",
+            "description": "• Developed a user-friendly and accessible way to view FEDEBOM data in the form of charts, graphs, and tables for an intuitive viewing experience to increase engineer productivity. • Worked with the library Limitless, which is similar to Bootstrap framework, to implement the web interface."
+        },
+        {
+            "company":"Ford Motor Company",
+            "title": "IT Development Intern",
+            "startDate": "05/19",
+            "endDate" : "08/19",
+            "description": "• Developed a software with python that scanned Ford Vehicle Requirement documents and output the list of requirements rules within the documents in a clear and convenient format for Ford engineers. • Applied various machine learning models such as SVM, Nearest Neighbor, etc., along with NTLK to parse the Ford Vehicle Requirement documents to extract the individual requirement rules."
+        },
+        {
+            "company":"Holiday Market",
+            "title": "Grocery Stocker",
+            "startDate": "05/18",
+            "endDate" : "08/18",
+            "description": "• Worked individually and in a team to ensure the store operated smoothly by assisting in the receiving, storing, and stocking of products in its designated position"
+        },
+        {
+            "company":"Holiday Market",
+            "title": "Grocery Stocker",
+            "startDate": "04/17",
+            "endDate" : "08/17",
+            "description": "• Worked individually and in a team to ensure the store operated smoothly by assisting in the receiving, storing, and stocking of products in its designated position"
         }
     ]
 }

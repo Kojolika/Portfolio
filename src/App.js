@@ -8,8 +8,9 @@ import { useState, useContext, useEffect } from 'react';
 
 import "./Styles/app.css";
 import settingsIcon from './Media/settingsIcon.png';
-import Menu from './Components/Modules/Menu';
-import { ColorThemeProvider, ColorThemeContext} from './Contexts/ColorThemeContext';
+import settingsIconHover from './Media/settingsIconHover.png';
+import Menu from './Components/Modules/ColorThemeMenu';
+import { ColorThemeProvider } from './Contexts/ColorThemeContext';
 
 import Home from './Components/Pages/Home';
 import Blog from './Components/Pages/Blog';
@@ -23,16 +24,7 @@ function App() {
   //document.body.style.overflow = "hidden"
 
   const [isSettingsMenuOn, setSettingsMenu] = useState(false);
-  var colorTheme = useContext(ColorThemeContext);
-  var color = colorTheme.colors[0];
-
-  var string = 'background: ' + color;
-
-  useEffect(() =>{
-    console.log(string);
-    //document.body.style = string;
-    document.body.style.backgroundColor =  color;
-  });
+  const [settingsIconImage, setSettingsIconImage] = useState(settingsIcon);
 
   return (
     <Router>
@@ -63,7 +55,11 @@ function App() {
               </div>
             </ul>
             <div className='settings'>
-              <img className='settingsIcon' src={settingsIcon} onClick={() => setSettingsMenu(!isSettingsMenuOn)} ></img>
+              <img className='settingsIcon'
+                src={settingsIconImage}
+                onMouseEnter={() => setSettingsIconImage(settingsIconHover)}
+                onMouseLeave={() => setSettingsIconImage(settingsIcon)}
+                onClick={() => setSettingsMenu(!isSettingsMenuOn)} />
               {isSettingsMenuOn &&
                 <Menu>
                   <ColorTheme></ColorTheme>

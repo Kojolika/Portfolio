@@ -1,15 +1,27 @@
 import React from 'react';
 import '../../Styles/colorTheme.css';
+import ColorThemeContext from '../../Contexts/ColorThemeContext';
 
-function ColorTheme (){
+function ColorTheme(props) {
+    const colorThemes = require("../../Data/colorThemes.json");
+    const theme = props.theme;
+    const colorTheme = colorThemes.themes[theme];
     return (
-    <div className='colorContainer'>
-        <div>test</div>
-        <div>test2</div>
-        <div>test3</div>
-        <div>test4</div>
-        <div>test5</div>
-    </div>
+        <ColorThemeContext.Consumer>
+            {(value) => {
+                return (
+                    <li>
+                        <div className='colorContainer' onClick={() => { value.setColorTheme(theme)}}>
+                            <div style={{ backgroundColor: colorTheme.colors[0] }}></div>
+                            <div style={{ backgroundColor: colorTheme.colors[1] }}></div>
+                            <div style={{ backgroundColor: colorTheme.colors[2] }}></div>
+                            <div style={{ backgroundColor: colorTheme.colors[3] }}></div>
+                            <div style={{ backgroundColor: colorTheme.colors[4] }}></div>
+                        </div>
+                    </li>
+                );
+            }}
+        </ColorThemeContext.Consumer>
     );
 }
 

@@ -1,18 +1,23 @@
 import { createContext } from 'react';
 
 const colorThemes = require("../Data/colorThemes.json");
-const defaultColorTheme = colorThemes.themes[0];
+var colorTheme = colorThemes.themes[0];
 
-export const ColorThemeContext = createContext(defaultColorTheme);
+const setColorTheme = (themeNumber) =>
+{
+    colorTheme = colorThemes.themes[themeNumber];
+    document.body.style.backgroundColor = colorTheme.colors[0];
+}
+
+export const ColorThemeContext = createContext(colorTheme);
 
 export const ColorThemeProvider = (props) =>
 {
     return(
-        <ColorThemeContext.Provider value={defaultColorTheme}>
+        <ColorThemeContext.Provider value={{colorTheme, setColorTheme}}>
             {props.children}
         </ColorThemeContext.Provider>
     )
-
 }
 
 export default ColorThemeContext;

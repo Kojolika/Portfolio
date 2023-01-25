@@ -1,8 +1,30 @@
 .companyName
 {
     opacity: 1;
+    font-size: xx-large;
+    padding: 2.5%;
+    border-radius: 50px;
+    font-weight: bold;
 }
 .companyDescription
 {
     opacity: 1;
+    padding: 2.5%;
+    border-radius: 50px;
+}
+.jobTitle
+{
+    opacity: 1;
+    font-size: large;
+    align-items: center;
+}
+.date
+{
+    opacity: 1;
+}
+.expContainer
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

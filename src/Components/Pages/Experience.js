@@ -6,22 +6,24 @@ import '../../Styles/experience.css';
 
 function Experience() {
     const experience = require("../../Data/experience.json");
+    const experienceArray = experience.experiences;
+
+    const listOfExperiences = experienceArray.map((exp) =>
+        <ContentBubble key={exp.startDate} >
+            <IndiviudalExp
+                company={exp.company}
+                title={exp.title}
+                startDate={exp.startDate}
+                endDate={exp.endDate}
+                description={exp.description}
+            />
+        </ContentBubble>
+    );
 
     return (
-        <div className='expList'>
-            <ContentBubble >
-                <IndiviudalExp
-                    company = {experience.experiences[0].company}
-                    title = {experience.experiences[0].title}
-                    startDate = {experience.experiences[0].startDate}
-                    endDate = {experience.experiences[0].endDate}
-                    description= {experience.experiences[0].description}>
-                </IndiviudalExp>;
-            </ContentBubble>
-            <ContentBubble></ContentBubble>
-            <ContentBubble></ContentBubble>
-            <ContentBubble></ContentBubble>
-        </div>
+        <ul className='expList'>
+            {listOfExperiences}
+        </ul>
     );
 }
 
