@@ -2,8 +2,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
-  useLocation
+  Link
 } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -17,8 +16,10 @@ import Home from './Components/Pages/Home';
 import Blog from './Components/Pages/Blog';
 import Contact from './Components/Pages/Contact';
 import Projects from './Components/Pages/Projects';
-import Experience from './Components/Pages/Experience';
 import ColorTheme from './Components/Atoms/ColorTheme';
+
+import github from './Media/GitHub_logo.png';
+import linkedIn from './Media/Linkedin-logo.png';
 
 function App() {
 
@@ -42,12 +43,6 @@ function App() {
 
               <span className='seperator'>|</span>
 
-              <div className='tab'> 
-                <Link to="/experience" className="tabName">Experience</Link>
-              </div>
-
-              <span className='seperator'>|</span>
-
               <div className='tab'>
                 <Link to="/projects" className="tabName">Projects</Link>
               </div>
@@ -58,6 +53,14 @@ function App() {
                 <Link to="/contact" className="tabName">Contact</Link>
               </div>
             </ul>
+            <div className='links'>
+              <a href="https://github.com/Kojolika">
+                <img id="githubLogo" src={github} />
+              </a>
+              <a href="https://www.linkedin.com/in/andrew-myshok-55106822a/">
+                <img id="linkedInLogo" src={linkedIn} />
+              </a >
+            </div>
             <div className='settings'>
               <img className='settingsIcon'
                 src={settingsIconImage}
@@ -71,7 +74,6 @@ function App() {
           <div className='menuFiller'></div>
           <Routes>
             <Route exact path='/' element={< Home />}></Route>
-            <Route exact path='/experience' element={< Experience />}></Route>
             <Route exact path='/projects' element={< Projects />}></Route>
             <Route exact path='/contact' element={< Contact />}></Route>
             <Route exact path='/blog' element={< Blog />}></Route>
