@@ -4,7 +4,7 @@ import ContentBubble from '../Modules/ContentBubble';
 function Projects() {
     return (
         <div>
-            <ContentBubble></ContentBubble>
+            <ContentBubble ></ContentBubble>
             <ContentBubble></ContentBubble>
         </div>
     );
