@@ -1,20 +1,20 @@
 import React from 'react';
 import ColorThemeContext from '../../Contexts/ColorThemeContext';
-import '../../Styles/contentBubble.css';
+import '../../Styles/contentInside.css';
 
-function ContentBubble(props) {
+function ContentInside(props) {
 
     return (
         <ColorThemeContext.Consumer>
             {(value) => {
                 return (
-                    <li id={props.id} onClick={props.onClick} className='contentContainer' style={{ backgroundColor: value.colorTheme.colors[2] }}>
+                    <div id={props.id} className='contentInsideContainer' style={{ backgroundColor: value.colorTheme.colors[3] }}>
                         {props.children}
-                    </li>);
+                    </div>);
             }}
         </ColorThemeContext.Consumer>
     );
 
 }
 
-export default ContentBubble;
+export default ContentInside;

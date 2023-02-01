@@ -1,0 +1,56 @@
+.projectsMain
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+#revolvingDawn
+{
+    margin-bottom: 5%;
+}
+
+#revolvingDawn:hover
+{
+    cursor: pointer;
+}
+
+#portfolio:hover
+{
+    cursor: pointer;
+}
+
+#popUp
+{
+    position: absolute;
+    opacity: 1;
+    width: 80%;
+    height: fit-content;
+    padding: 5%;
+}
+#popUp:hover
+{
+    transform: scale(1);
+}
+.header
+{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+.closeButton
+{
+   float: right;
+   font-size: 50px;
+   font-weight: bold;
+}
+.closeButton:hover
+{
+    cursor: pointer;
+}
+.clickTooltip
+{
+    font-style: italic;
+}

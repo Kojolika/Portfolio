@@ -17,6 +17,7 @@ import Blog from './Components/Pages/Blog';
 import Contact from './Components/Pages/Contact';
 import Projects from './Components/Pages/Projects';
 import ColorTheme from './Components/Atoms/ColorTheme';
+import DesignTestCube from './Components/Atoms/DesignTestCube';
 
 import github from './Media/GitHub_logo.png';
 import linkedIn from './Media/Linkedin-logo.png';
@@ -31,6 +32,32 @@ function App() {
     setSettingsMenu(!isSettingsMenuOn);
   };
 
+
+  const cubeCount = 100;
+  const designCubes = [];
+
+  const offsetFromRight = 50;
+  const waveHeight = 20;
+  const waveLength = 10; //inverse relationship
+  const animSpeed = 35;   //inverse relationship
+  const totalLineHeight = 150;
+
+  for (var i = 1; i <= cubeCount; i++) {
+    designCubes.push(i);
+  }
+
+  const cubes = designCubes.map((index) =>
+    <DesignTestCube
+      key={index}
+      top={(Math.sin(10 + (index / cubeCount) * waveLength) * waveHeight) + offsetFromRight + "%"}
+      left={((index / cubeCount)) * totalLineHeight + -50 + "%"}
+      animDur={index / cubeCount + animSpeed + "s"}
+
+    >
+    </DesignTestCube>
+
+  );
+
   return (
     <Router>
       <ColorThemeProvider>
@@ -44,7 +71,7 @@ function App() {
               <span className='seperator'>|</span>
 
               <div className='tab'>
-                <Link to="/projects" className="tabName">Projects</Link>
+                <Link to="/projects" className="tabName">Personal Projects</Link>
               </div>
 
               <span className='seperator'>|</span>
@@ -78,6 +105,9 @@ function App() {
             <Route exact path='/contact' element={< Contact />}></Route>
             <Route exact path='/blog' element={< Blog />}></Route>
           </Routes>
+          <ul id='designTestContainer'>
+            {cubes}
+          </ul>
         </div>
       </ColorThemeProvider>
     </Router>

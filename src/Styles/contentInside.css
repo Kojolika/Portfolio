@@ -1,0 +1,14 @@
+.contentInsideContainer
+{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    word-wrap: break-word;
+    white-space: pre-line;
+    padding: 3%;
+    transition: .3s;
+    margin-bottom: 2%;
+    font-size: 20px;
+    border-radius: 30px;
+}

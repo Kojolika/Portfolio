@@ -7,8 +7,43 @@
     padding-top: 2%;
     scrollbar-width: none;
 }
-.leftSide
+.logoContainer
 {
+    display:contents;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    z-index: 1;
+}
+#linkedInLogo2 {
+    max-width: 21%;
+    object-fit: contain;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+
+#githubLogo2 {
+    max-width: 12%;
+    object-fit: contain;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+#githubLogo2:hover, #linkedInLogo2:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.socialMediaIcons {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.leftSide {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -16,8 +51,8 @@
     height: 100%;
     width: 50%;
 }
-.rightSide
-{
+
+.rightSide {
     margin-left: 5%;
     height: 100%;
     width: 50%;
@@ -27,24 +62,24 @@
     align-items: center;
 }
 
-#introMessageContainer
-{
+#introMessageContainer {
     display: flex;
-    padding: 2%;
-    height: 100%;
-    width: 100%;
-    margin-bottom: 5%;
+    height: fit-content;
+    width: 80%;
+    margin-bottom: 10%;
+    background-color: transparent;
+    padding: 10%;
 }
-#contact
-{
+
+#contact {
     color: black;
 }
-#contact:hover
-{
+
+#contact:hover {
     color: #00b4d8;
 }
-#experience
-{
+
+#experience {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -54,68 +89,71 @@
     max-width: 85%;
     margin-bottom: 5%;
 }
-#education
-{
+
+#education {
     display: flex;
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
     text-align: center;
-    max-width: 60%;
+    max-width: 85%;
+    margin-bottom: 25%;
+    align-items: center;
 }
-.title
+
+#mainPageTitle 
 {
-    padding: 2%;
-    margin-bottom: 2%;
-    text-align: center;
-    border-radius: 50px;
-    width: 50%;
-    font-size: xx-large;
-}
-.expDescription
-{
-    padding: 2%;
-    margin-bottom: 2%;
-    text-align: center;
-    border-radius: 50px;
+    font-size: 40px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
     width: 100%;
 }
-#skills
-{
+
+#skills {
     margin-top: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    max-width: 70%;
 }
-.languages
-{
-    padding: 2%;
-    margin-bottom: 2%;
+
+.languages {
     text-align: center;
-    border-radius: 50px;
-}
-.tools
-{
-    padding: 2%;
+    font-style: italic;
+    font-family:monospace;
     margin-bottom: 2%;
+}
+
+.tools {
     text-align: center;
-    border-radius: 50px;
+    font-style: italic;
+    font-family:monospace;
+    margin-bottom: 2%;
 }
-.image
-{
-    max-width: 75%;
-    max-height: 75%;
-    border-radius: 50px;
+.image {
+    max-width: 82%;
+    max-height: 82%;
+    transition: .3s ease-in-out;
+    z-index: 1;
 }
-.imageContainer
-{
-    overflow: hidden;
+
+.image:hover {
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+.imageContainer {
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 0%;
 }
+
 .name {
+    transition: .3s;
     font-size: 40px;
     background-color: #C2DFE3;
     border-radius: 50px;
@@ -123,35 +161,22 @@
     margin-bottom: 5%;
     text-align: center;
 }
-.description
-{
-    background-color: #E0FBFC;
-    border-radius: 50px;
-    font-size: 24px;
-    padding-left: 5%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
 
-.para1
-{
+.description {
+    font-size: 24px;
     display: flex;
-    padding: 3%;
-    border-radius: 50px;
-    width: 100%;
+    flex-direction: column;
+    transition: .3s;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
-.para2
+.para
 {
-    display: flex;
-    padding: 3%;
-    border-radius: 50px;
-    width: 100%;
+    margin-bottom: 3%;
 }
-.para3
+#contactButton
 {
     display: flex;
-    padding: 3%;
-    border-radius: 50px;
-    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
