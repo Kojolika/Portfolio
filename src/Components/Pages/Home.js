@@ -30,14 +30,14 @@ function Home() {
                             I'm a recent graduate from the University of Windsor that is actively looking for work.
                         </span>
                         <span className='para' >
-                            I have professional experience with machine learning applications, and I enjoy coding in my free time to learn and train my software developer skills (on applications such as this one!).
+                            I have professional experience with machine learning applications, and I enjoy coding in my free time to learn and improve my software developer skills (on applications such as this one!).
                         </span>
                         <ContentInside>
                             <div className='languages' >
-                                Python, C#, C, C++, Java, Javascript, HTML, CSS, SQL
+                                Python, C#, C++, Java, C, CSS, HTML, JavaScript, PHP, SQL
                             </div>
                             <div className='tools' >
-                                Github, AWS, MongoDB, React, and  JUnit
+                                AWS, Docker, React, Redux, Node, MongoDB, EF Core, Unity, Agile, JUnit, Limitless
                             </div>
                         </ContentInside>
                     </div>
