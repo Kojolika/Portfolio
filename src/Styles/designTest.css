@@ -1,6 +1,6 @@
 #designTest
 {
-    position: absolute;
+    position: fixed;
 
     height: 1000px;
     width: 250px;
@@ -10,8 +10,7 @@
     animation-name: spin;
     animation-direction: normal;
     animation-iteration-count: infinite;
-    animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1);
-    
+    animation-timing-function: ease-in-out;
     transition: .3s;
     display: flex;
     justify-content: center;

@@ -12,7 +12,7 @@ function RevolvingDawn() {
             <span className='subTitle'>Tools/Languages:</span>
             <p>Unity, C#, Github</p>
             <span className='subTitle'>Design Patterns</span>
-            <p>MVC, State, Observer, Chain of Responsibility, Factory</p>
+            <p>MVC, State, Observer, Chain of Responsibility</p>
             <span className='subTitle'>Description:</span>
             <p>If you've played games like Slay the Spire, Monster Train or 
                     Across the Obelisk then this genre should be familiar to you. The main gameplay loop is building a deck of cards as you fight through

@@ -1,11 +1,17 @@
 .homeMainArea {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 2%;
     scrollbar-width: none;
+}
+.topRow
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 .logoContainer
 {
@@ -40,117 +46,65 @@
     width: fit-content;
     height: fit-content;
     justify-content: center;
-    margin-bottom: 3%;
-}
-
-.leftSide {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 50%;
-}
-
-.rightSide {
-    margin-left: 5%;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    z-index: 1;
 }
 
 #introMessageContainer {
     display: flex;
     height: fit-content;
-    width: 80%;
-    margin-bottom: 10%;
-    background-color: transparent;
-    padding: 10%;
+    width: fit-content;
+    flex-direction: column;
+    margin-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #contact {
     color: black;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 2;
+    margin-top: 1%;
 }
 
 #contact:hover {
     color: #00b4d8;
 }
 
-#experience {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    max-width: 85%;
-    margin-bottom: 5%;
-}
-
-#education {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
-    max-width: 85%;
-    margin-bottom: 25%;
-    align-items: center;
-}
-
 #mainPageTitle 
 {
-    font-size: 40px;
+    font-size: 80px;
+    font-size-adjust:initial;
     display: flex;
     justify-content: left;
     flex-direction: column;
-    width: 100%;
+    white-space: nowrap;
+    text-align: center;
 }
-
-#skills {
-    margin-top: 10%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    max-width: 70%;
+#job
+{
+    font-family: monospace;
 }
-
+#name{
+    font-weight: bold;
+}
 .languages {
     text-align: center;
     font-style: italic;
     font-family:monospace;
     margin-bottom: 2%;
 }
-
-.tools {
-    text-align: center;
-    font-style: italic;
-    font-family:monospace;
-    margin-bottom: 2%;
-}
-.image {
-    max-width: 82%;
-    max-height: 82%;
-    transition: .3s ease-in-out;
+#image {
+    height: 100%;
+    width: 100%;
     z-index: 1;
+    border-radius: 50%;
+    min-width: 35%;
 }
 
-.image:hover {
-    opacity: 1;
-    transform: scale(1.01);
-}
-
-.imageContainer {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
-    margin-top: 0%;
-}
 
 .name {
     transition: .3s;
@@ -163,7 +117,7 @@
 }
 
 .description {
-    font-size: 24px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     transition: .3s;
@@ -173,10 +127,4 @@
 .para
 {
     margin-bottom: 3%;
-}
-#contactButton
-{
-    display: flex;
-    justify-content: center;
-    text-align: center;
 }

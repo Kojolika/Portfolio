@@ -10,7 +10,7 @@ import "./Styles/app.css";
 import settingsIcon from './Media/settingsIcon.png';
 import settingsIconHover from './Media/settingsIconHover.png';
 import ColorThemeMenu from './Components/Modules/ColorThemeMenu';
-import { ColorThemeProvider } from './Contexts/ColorThemeContext';
+import ColorThemeContext, { ColorThemeProvider } from './Contexts/ColorThemeContext';
 
 import Home from './Components/Pages/Home';
 import Blog from './Components/Pages/Blog';
@@ -33,6 +33,8 @@ function App() {
   };
 
 
+  //Creates the background animation
+  //////////////////////////////////////////////////////////////////////////////////////////////////
   const cubeCount = 100;
   const designCubes = [];
 
@@ -57,6 +59,7 @@ function App() {
     </DesignTestCube>
 
   );
+  //////////////////////////////////////////////////////////////////////////////////////////////////
 
   return (
     <Router>
