@@ -24,7 +24,7 @@
     }
     50%
     {
-        transform: rotate3d(1,4,0,180deg) scale(.5);
+        transform: rotate3d(1,4,0,180deg) scale(1);
         width: 350px;
         opacity: 1;
 

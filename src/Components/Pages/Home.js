@@ -30,32 +30,34 @@ function Home() {
                     </div>
 
                     <div id='contact'>
-                        <Link to="/contact">
+                        <Link to="/contact" id='contactText'>
                             Contact me!
                         </Link>
                     </div>
                 </div>
             </div>
-            <div id='row2'>
-                <div className='description' >
-                    <span className='para'>
-                        I'm a recent graduate from the University of Windsor that is actively looking for work.
-                    </span>
-                    <span className='para' >
-                        I have professional experience with machine learning applications, and I enjoy coding in my free time to learn and improve my software developer skills (on applications such as this one!).
-                    </span>
+            <ContentBubble id='bottomRows'>
+                <div id='row2'>
+                    <div className='description' >
+                        <span className='para'>
+                            I'm a recent graduate from the University of Windsor that is actively looking for work.
+                        </span>
+                        <span className='para' >
+                            I have professional experience with machine learning applications, and I enjoy coding in my free time to learn and improve my software developer skills (on applications such as this one!).
+                        </span>
+                    </div>
                 </div>
-            </div>
-            {/*
-
-            <div id='skills'>
-                <div className='languages' >
-                    Python, C#, C++, Java, C, CSS, HTML, JavaScript, PHP, SQL
+                <div id='row3'>
+                    <div id='skills'>
+                        <div className='languages' >
+                            Python, C#, C++, Java, C, CSS, HTML, JavaScript, PHP, SQL
+                        </div>
+                        <div className='languages' >
+                            React, Redux, Node, AWS, EF Core, Unity, Agile, MongoDB, JUnit, Limitless
+                        </div>
+                    </div>
                 </div>
-                <div className='tools' >
-                    AWS, Docker, React, Redux, Node, MongoDB, EF Core, Unity, Agile, JUnit, Limitless
-                </div>
-            </div> */}
+            </ContentBubble>
         </div>
     );
 }

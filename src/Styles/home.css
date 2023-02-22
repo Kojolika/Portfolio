@@ -65,12 +65,23 @@
     color: black;
     font-size: 20px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     z-index: 2;
     margin-top: 1%;
+    text-decoration: none;
+}
+#contactText {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 2;
+    margin-top: 1%;
+    text-decoration: none;
 }
 
-#contact:hover {
+
+#contactText:hover {
     color: #00b4d8;
 }
 
@@ -96,13 +107,14 @@
     font-style: italic;
     font-family:monospace;
     margin-bottom: 2%;
+    font-size: 30px;
 }
 #image {
-    height: 100%;
-    width: 100%;
     z-index: 1;
     border-radius: 50%;
-    min-width: 35%;
+    height: 400px;
+    width: 400px;
+    margin-top: 5%;
 }
 
 
@@ -123,8 +135,16 @@
     transition: .3s;
     margin-top: 5%;
     margin-bottom: 5%;
+    text-align: center;
 }
 .para
 {
     margin-bottom: 3%;
+}
+
+#bottomRows
+{
+    margin-top: 20%;
+    margin-bottom: 5%;
+    padding: 0;
 }

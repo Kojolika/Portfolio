@@ -57,7 +57,7 @@ function Projects() {
                 }}>
                 <Title>Revolving Dawn</Title>
                 <ContentInside>
-                    A roguelike deckbuilder game I am developing in Unity with C#, and verison control with Github.
+                    A roguelike deckbuilder game I am developing in Unity with C#, and version control with Github.
                 </ContentInside>
                 <span className='clickTooltip'>Click for detailed information</span>
             </ContentBubble>
@@ -67,7 +67,7 @@ function Projects() {
                 }}>
                 <Title>Portfolio Website</Title>
                 <ContentInside>
-                    A website portfolio created with React (and of course HTML, CSS, and JavaScript), hosted with AWS, CI/CD with AWS Amplify, and verison control with Github. 
+                    A website portfolio created with React (and of course HTML, CSS, and JavaScript), hosted with AWS, CI/CD with AWS Amplify, and version control with Github. 
                 </ContentInside>
                 <span className='clickTooltip'>Click for detailed information</span>
             </ContentBubble>

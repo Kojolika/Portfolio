@@ -10,7 +10,7 @@ import "./Styles/app.css";
 import settingsIcon from './Media/settingsIcon.png';
 import settingsIconHover from './Media/settingsIconHover.png';
 import ColorThemeMenu from './Components/Modules/ColorThemeMenu';
-import ColorThemeContext, { ColorThemeProvider } from './Contexts/ColorThemeContext';
+import { ColorThemeProvider } from './Contexts/ColorThemeContext';
 
 import Home from './Components/Pages/Home';
 import Blog from './Components/Pages/Blog';
@@ -38,10 +38,10 @@ function App() {
   const cubeCount = 100;
   const designCubes = [];
 
-  const offsetFromRight = 50;
-  const waveHeight = 20;
+  const offsetFromTop = 60;
+  const waveHeight = 10;
   const waveLength = 10; //inverse relationship
-  const animSpeed = 35;   //inverse relationship
+  const animSpeed = 50;   //inverse relationship
   const totalLineHeight = 150;
 
   for (var i = 1; i <= cubeCount; i++) {
@@ -51,7 +51,7 @@ function App() {
   const cubes = designCubes.map((index) =>
     <DesignTestCube
       key={index}
-      top={(Math.sin(10 + (index / cubeCount) * waveLength) * waveHeight) + offsetFromRight + "%"}
+      top={(Math.sin(10 + (index / cubeCount) * waveLength) * waveHeight) + offsetFromTop + "%"}
       left={((index / cubeCount)) * totalLineHeight + -50 + "%"}
       animDur={index / cubeCount + animSpeed + "s"}
 
@@ -101,7 +101,7 @@ function App() {
                 </ColorThemeMenu>}
             </div>
           </div>
-          <div className='menuFiller'></div>
+          {/* <div className='menuFiller'></div> */}
           <Routes>
             <Route exact path='/' element={< Home />}></Route>
             <Route exact path='/projects' element={< Projects />}></Route>
